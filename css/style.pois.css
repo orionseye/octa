@@ -1,0 +1,78 @@
+#pois {
+ max-height: 300px;
+ overflow-y: scroll;
+ z-index: 1;
+}
+
+		/* ===== Scrollbar CSS https://codepen.io/stephenpaton-tech/full/JjRvGmY ===== */
+		  /* Firefox */
+		  #pois {
+			scrollbar-width: auto;
+			scrollbar-color: #b3b3b3 #ffffff;
+		  }
+
+		  /* Chrome, Edge, and Safari */
+		  #pois::-webkit-scrollbar {
+			width: 16px;
+		  }
+
+		  #pois::-webkit-scrollbar-track {
+			background: #ffffff;
+		  }
+
+		  #pois::-webkit-scrollbar-thumb {
+			background-color: #b3b3b3;
+			border-radius: 10px;
+			border: 3px solid #ffffff;
+		  }
+  
+  
+.poi-checkbox {
+	width: calc(50% - 4px);
+	display: inline-block;
+	margin: 2px;
+}
+@media (min-width: 600px) and (max-width: 767px) {
+	.poi-checkbox {
+		width: calc(33% - 4px);
+	}
+}
+.poi-checkbox > label {
+	display: inline-block;
+	width: 100%;
+	border-radius: 5px;
+	white-space: nowrap;
+	transition: background-color 100ms;
+}
+.poi-checkbox > label > img {
+	float: left;
+	height: 30px;
+	margin: 1px 4px;
+}
+.poi-checkbox > label > input {
+	display: none;
+}
+.poi-checkbox > label > span {
+	display: inline-block;
+	overflow: hidden;
+	width: calc(100% - 40px);
+	height: 28px;
+	line-height: 30px;
+}
+.poi-checkbox-selected {
+	background-color: rgba(255, 255, 255, 0.8);
+	font-weight: bold;
+	box-shadow: 0 0 4px #b5b3b3;
+}
+	.poi-checkbox-selected span:after {
+		color: #76bb55;
+		content: '\f00c';
+		line-height: 1;
+		font-family: 'Line Awesome Free';
+		color: #74b854;
+		margin-left: 5px;
+	}
+.poi-loading {
+	pointer-events: none;
+	opacity: 0.5;
+}

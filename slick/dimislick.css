@@ -1,0 +1,136 @@
+
+/******************************************* 
+  ABOUT slides
+  https://codepen.io/Svarnoy85/pen/NzQPpe
+  Slick carousel with detached captions
+********************************************/
+
+.ab-slider {
+  overflow: hidden !important;
+  width:auto;
+  height: 750px;
+  align-items: center;
+}
+.ab-slides {
+  /*background: #ccc;*/
+}
+.ab-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  /*background: #fff;*/
+  height: 650px;
+  outline: 0 !important;
+  font-size: 40px;
+}
+.ab-controls {
+  display: flex;
+  width: 100%;
+  margin-top: 25px;
+}
+.ab-captions {
+  flex: 1;
+  width: 100px;
+  padding: 10px;
+  margin-top: 2px;
+  color: #e74671;
+  background: #fff;
+}
+.ab-caption {
+  outline: 0 !important;
+  text-align: center;
+}
+.ab-caption h4{
+  /*color: #e74671 !important;*/
+  letter-spacing: .2rem;
+}
+
+	.ab-pagination {
+	  display: flex;
+	  margin-top: 2px;
+	}
+	.ab-pagination__button {
+	  cursor: pointer;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  color: #ccc;
+	  /*background: #fff;*/
+	  width: 40px;
+	  height: 40px;
+	  margin-left: 2px;
+	}
+	.ab-pagination__button:hover {
+	  background: transparent;
+	}
+	.ab-pagination__button.slick-disabled {
+	  cursor: not-allowed;
+	  background: #ccc;
+	}
+
+/********************** 
+  HOTELS etc slides
+**********************/
+
+/* https://codepen.io/ghanshyam-patel/pen/BapGxEq */
+
+/* fix the main wrapper to expand, so center slide shadow is not being cut off https://stackoverflow.com/a/47326535/801018 */
+.sl-wrapper {
+  width: calc(100% + 30px);
+  padding: 50px 15px;
+  margin-left: -15px;
+  overflow: hidden;
+}
+
+.sl-wrapper .slick-list {
+  overflow: visible;
+}
+
+
+/* Default slide */
+.sl-sliders .slick-slide{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #fff;
+  color: #000;
+  height: 500px;
+  margin: 0 15px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0.8);
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+}
+.sl-sliders .slick-slide,
+.sl-sliders .slick-slide[aria-hidden="true"]:not(.slick-cloned) ~ .slick-cloned[aria-hidden="true"] {
+  transform: scale(0.8, 0.8);
+  transition: all 0.4s ease-in-out;
+}
+
+/* Active center slide (change anything here) */
+.sl-sliders .slick-current.slick-active{
+  transform: scale(1.1);
+}
+.sl-sliders .slick-center,
+.sl-sliders .slick-slide[aria-hidden="true"]:not([tabindex="-1"]) + .slick-cloned[aria-hidden="true"] {
+  transform: scale(1.1); /* need to avoid jumping on start over at slide 1 */
+}
+
+.sl-sliders .slick-slide img{
+  height: 500px;
+}
+.sl-sliders .slick-slide h3{
+  font-size: 1.2em;
+}
+.sl-sliders .slick-slide p{
+  font-size: 0.8em;
+  line-height: 1.5em;
+}
+
+.filter-red{
+    filter: invert(38%) sepia(85%) saturate(622%) hue-rotate(294deg) brightness(91%) contrast(88%);
+	cursor: pointer
+}
+
+
+
