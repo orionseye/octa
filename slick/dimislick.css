@@ -69,60 +69,65 @@
 	}
 
 /********************** 
-  HOTELS etc slides
+  HOTELS, Tours etc slides
 **********************/
 
 /* https://codepen.io/ghanshyam-patel/pen/BapGxEq */
 
 /* fix the main wrapper to expand, so center slide shadow is not being cut off https://stackoverflow.com/a/47326535/801018 */
-.sl-wrapper {
+.sl-wrapper,
+.tr-wrapper {
   width: calc(100% + 30px);
   padding: 50px 15px;
-  margin-left: -15px;
+  /* margin-left: -15px; */
   overflow: hidden;
 }
 
-.sl-wrapper .slick-list {
+.sl-wrapper .slick-list,
+.tr-wrapper .slick-list {
   overflow: visible;
 }
 
 
 /* Default slide */
-.sl-sliders .slick-slide{
+.sl-sliders .slick-slide,
+.tr-sliders .slick-slide {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   background-color: #fff;
   color: #000;
-  height: 500px;
+  height: 600px;
   margin: 0 15px 0 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: scale(0.8);
   transition: all 0.4s ease-in-out;
   overflow: hidden;
 }
+/*
 .sl-sliders .slick-slide,
 .sl-sliders .slick-slide[aria-hidden="true"]:not(.slick-cloned) ~ .slick-cloned[aria-hidden="true"] {
-  transform: scale(0.8, 0.8);
   transition: all 0.4s ease-in-out;
 }
 
-/* Active center slide (change anything here) */
+ Active center slide (change anything here) 
 .sl-sliders .slick-current.slick-active{
-  transform: scale(1.1);
 }
 .sl-sliders .slick-center,
 .sl-sliders .slick-slide[aria-hidden="true"]:not([tabindex="-1"]) + .slick-cloned[aria-hidden="true"] {
-  transform: scale(1.1); /* need to avoid jumping on start over at slide 1 */
 }
-
-.sl-sliders .slick-slide img{
-  height: 500px;
+*/
+.sl-sliders .slick-slide img,
+.tr-sliders .slick-slide img {
+max-width:100%;
+height: auto;
+max-height:600px;
 }
-.sl-sliders .slick-slide h3{
+.sl-sliders .slick-slide h3,
+.tr-sliders .slick-slide h3 {
   font-size: 1.2em;
 }
-.sl-sliders .slick-slide p{
+.sl-sliders .slick-slide p,
+.tr-sliders .slick-slide p {
   font-size: 0.8em;
   line-height: 1.5em;
 }
