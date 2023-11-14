@@ -42,7 +42,7 @@ section.entry::after {
         justify-content: center;
         padding: 10px 0;
         width: 100%;
-        background-color: #1F487E;
+        background-color: #8b3253;
         color: #fff;
         border-radius: 0 0 8px 8px;
         border-top: 3px solid white;
@@ -76,6 +76,25 @@ section.entry::after {
 
 
 /* Maps */
+
+/* Top map dashed line */
+.map-dashed-path {
+  stroke-dasharray: 0 1000;
+  /*stroke-dashoffset: 1000; /* NOT NEEDED */
+  animation: mapdash 5s linear alternate;
+}
+
+@keyframes mapdash {
+  from {
+    stroke-dasharray: 0 100; /* zero-length stroke, 
+                                 1000-length gap */
+  }
+  to {
+    stroke-dasharray: 100 0;/* 1000-length stroke, 
+                                 zero-length gap */
+  }
+}
+
 
 /* Middle maps */
 .mapsmiddle {
