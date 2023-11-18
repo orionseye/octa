@@ -636,7 +636,8 @@
 
  
 
-    var detectViewport = function() {
+    /*
+	var detectViewport = function() {
 
          $('[data-waypoint-active="yes"]').waypoint(function() {
 
@@ -645,6 +646,7 @@
          }, { offset: '90%', triggerOnce: true });
 
     };
+	*/
 
  
 
@@ -768,7 +770,7 @@ $(function() {
 
     retinaLogos(); 
 
-    detectViewport();    
+    //detectViewport();    
 
     googleMap(); 
 

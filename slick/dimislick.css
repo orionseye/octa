@@ -27,6 +27,7 @@
   display: flex;
   width: 100%;
   margin-top: 25px;
+  height: 150px;
 }
 .ab-captions {
   flex: 1;
@@ -39,10 +40,11 @@
 .ab-caption {
   outline: 0 !important;
   text-align: center;
+   /* Or whathever */
 }
 .ab-caption h4{
   /*color: #e74671 !important;*/
-  letter-spacing: .2rem;
+  letter-spacing: .02rem;
 }
 
 	.ab-pagination {
@@ -56,8 +58,8 @@
 	  align-items: center;
 	  color: #ccc;
 	  /*background: #fff;*/
-	  width: 40px;
-	  height: 40px;
+	  width: 60px;
+	  height: 60px;
 	  margin-left: 2px;
 	}
 	.ab-pagination__button:hover {
@@ -77,10 +79,9 @@
 /* fix the main wrapper to expand, so center slide shadow is not being cut off https://stackoverflow.com/a/47326535/801018 */
 .sl-wrapper,
 .tr-wrapper {
-  width: calc(100% + 30px);
-  padding: 50px 15px;
-  /* margin-left: -15px; */
-  overflow: hidden;
+    padding: 3em;
+    border-radius: 1.25rem!important;
+    min-height: 700px;
 }
 
 .sl-wrapper .slick-list,
@@ -92,7 +93,7 @@
 /* Default slide */
 .sl-sliders .slick-slide,
 .tr-sliders .slick-slide {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  /*box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;*/
   background-color: #fff;
   color: #000;
   height: 600px;
@@ -132,10 +133,47 @@ max-height:600px;
   line-height: 1.5em;
 }
 
-.filter-red{
+.filter-red {
     filter: invert(38%) sepia(85%) saturate(622%) hue-rotate(294deg) brightness(91%) contrast(88%);
 	cursor: pointer
 }
 
 
 
+
+/*************************************** 
+  Destination Research tools & Analytics
+****************************************/
+.research {
+    width: 65%;
+    padding: 3em;
+    border-radius: 1.25rem!important;
+    min-height: 766px;
+}
+.toggle-sections {
+    margin: 32px;
+}
+	.toggle-sections .anav_item {
+		padding: 1em 3em;
+		border-radius: 0.25rem;
+		cursor: pointer;
+		height: 96px;
+		width: 173px;
+		margin-right: 32px;
+		text-align: center;
+		color: #1f2937;
+		font-size: 12px;
+		line-height: 100%;
+		font-weight: 500;
+	}
+
+.jim {
+    margin-top: 5em;
+}
+.ooo h4 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: .009em;
+    color: #1f2937;
+}

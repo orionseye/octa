@@ -196,12 +196,28 @@ section.mapps::after {
 }
 
 
+/* Bootstrap.style additions */
 
-/* clear */
-.clearall {
-    display: block;
-    clear: both;
-  }
+.w-90{width:90%!important}
+.w-80{width:80%!important}
+.w-65{width:65%!important}
+
+.text-justify {/* from v4 abandoned in v5 */
+  margin: 0;
+  /* text-indent: 2rem; */
+  text-align: justify;
+}
+
+
+
+/* animate.style additions */
+.animate__animated.animate__delay-1-5s {-webkit-animation-delay: 1.5s;animation-delay: 1.5s;-webkit-animation-delay: calc(var(--animate-delay)*1.5);animation-delay: calc(var(--animate-delay)*1.5);}
+.animate__animated.animate__delay-2-5s {-webkit-animation-delay: 2.5s;animation-delay: 2.5s;-webkit-animation-delay: calc(var(--animate-delay)*2.5);animation-delay: calc(var(--animate-delay)*2.5);}
+.animate__animated.animate__delay-3-5s {-webkit-animation-delay: 3.5s;animation-delay: 3.5s;-webkit-animation-delay: calc(var(--animate-delay)*3.5);animation-delay: calc(var(--animate-delay)*3.5);}
+.animate__animated.animate__delay-4-5s {-webkit-animation-delay: 4.5s;animation-delay: 4.5s;-webkit-animation-delay: calc(var(--animate-delay)*4.5);animation-delay: calc(var(--animate-delay)*4.5);}
+.animate__animated.animate__delay-5-5s {-webkit-animation-delay: 5.5s;animation-delay: 5.5s;-webkit-animation-delay: calc(var(--animate-delay)*5.5);animation-delay: calc(var(--animate-delay)*5.5);}
+
+
 /* shadows */
 .shadow-c {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -220,3 +236,6 @@ ul.beta {
   font-size: 90%;
 }
 
+.lightspan {
+  font-weight: 100;
+}
