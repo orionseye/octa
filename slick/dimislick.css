@@ -5,6 +5,13 @@
   Slick carousel with detached captions
 ********************************************/
 
+.ab-rounded {
+    /* width: 80%; */
+    padding: 3em;
+    border-radius: 1.25rem!important;
+    min-height: 800px;
+}
+
 .ab-slider {
   overflow: hidden !important;
   width:auto;
@@ -97,7 +104,7 @@
   background-color: #fff;
   color: #000;
   height: 600px;
-  margin: 0 15px 0 0;
+  /* margin: 0 15px 0 0; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -118,11 +125,7 @@
 }
 */
 .sl-sliders .slick-slide img,
-.tr-sliders .slick-slide img {
-max-width:100%;
-height: auto;
-max-height:600px;
-}
+.tr-sliders .slick-slide img {max-width:100%;height: auto;max-height:600px;}
 .sl-sliders .slick-slide h3,
 .tr-sliders .slick-slide h3 {
   font-size: 1.2em;

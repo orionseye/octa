@@ -594,7 +594,7 @@
 
          $(window).scroll(function() {
 
-             if ( $(this).scrollTop() > 800 ) {
+             if ( $(this).scrollTop() > 1000 ) {
 
                  $('.go-top').addClass('show');
 
@@ -610,7 +610,7 @@
 
          $('.go-top').on('click', function() {            
 
-             $("html, body").animate({ scrollTop: 0 }, 1000 , 'easeInOutExpo');
+             $("html, body").animate({ scrollTop: 0 }, 100 , 'easeInOutExpo');
 
              return false;
 
