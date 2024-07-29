@@ -1,3 +1,8 @@
+/* language */
+img.language {
+	cursor: pointer;
+}
+
 /* entry */
 section.entry::after {
   content: "";
